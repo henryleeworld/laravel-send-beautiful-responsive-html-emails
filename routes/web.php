@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
-use Snowfire\Beautymail\Beautymail;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,5 +13,6 @@ use Snowfire\Beautymail\Beautymail;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/mail/welcome/{typeId}', 'MailController@welcome')->where(['typeId' => '[0-9]+']);
-Route::get('/mail/test', 'MailController@test');
+
+Route::get('/mail/welcome/{typeId}', [MailController::class, 'welcome'])->where(['typeId' => '[0-9]+']);
+Route::get('/mail/test', [MailController::class, 'test']);

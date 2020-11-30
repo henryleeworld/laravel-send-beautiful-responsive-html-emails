@@ -1,4 +1,4 @@
-# Laravel 7 發送精美的回應式 HTML 電子郵件
+# Laravel 8 發送精美的回應式 HTML 電子郵件
 
 引入 snowfire 的 beautymail 套件來擴增發送精美的回應式 HTML 電子郵件，預覽這些電子郵件，了解郵件在成百上千個裝置、瀏覽器及收件匣中的具體呈現形式。
 
