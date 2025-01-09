@@ -14,4 +14,3 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/mail/welcome/{typeId}', [MailController::class, 'welcome'])->where(['typeId' => '[0-9]+']);
-Route::get('/mail/test', [MailController::class, 'test']);
